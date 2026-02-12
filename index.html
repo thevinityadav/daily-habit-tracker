@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Habit Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Daily Habit Tracker</h1>
+    </header>
+
+    <!-- Habit List -->
+    <div class="habit-list" id="habitList">
+      <p id="noHabit">No habits added yet.</p>
+    </div>
+
+    <!-- Floating Add Button -->
+    <button class="add-float" id="openModal">+</button>
+
+    <!-- Modal for Adding Habit -->
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <h2>Add New Habit</h2>
+        <input type="text" id="habitName" placeholder="Habit Name">
+        <input type="text" id="habitDesc" placeholder="Description (optional)">
+        <button id="addBtn">Add Habit</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
